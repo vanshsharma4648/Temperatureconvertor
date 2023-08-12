@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('bg2.jpg')center/cover no-repeat;
+        
+    
+    font-family : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.container {
+    background: rgba(252, 25, 25, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 10px rgba(0, 252, 231, 0.3);
+    width: 85%;
+    max-width: 800px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.heading {
+    font-size: 32px;
+}
+
+.temp-container {
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    width: 60%;
+    font-family: cursive;
+    padding: 5px;
+    outline: none;
+    background: rgb(208, 248, 115);
+    border-color: #5a98b1;
+    color: rgb(248, 66, 66);
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: rgb(11, 145, 255);
+}
+v{
+    text-align: center;
+}
+.temperature-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+/* Responsive CSS */
+@media (min-width: 600px) {
+    .container {
+        width: 70%;
+    }
+
+    input {
+        width: 50%;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 60%;
+    }
+
+    input {
+        width: 40%;
+    }
+}
